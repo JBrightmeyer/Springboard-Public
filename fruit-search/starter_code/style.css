@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px solid rgb(255, 140, 33);
+}
+
+body {
+  display: flexbox;
+  width:100vw;
+  height:100vh;
+  background-image: linear-gradient(to right, yellow,rgb(253, 122, 0));
+}
+
+input {
+  height:30px;
+  width: 300px;
+  background-color: rgb(252, 191, 101);
+  border: none;
+  outline: 2px solid rgb(255, 140, 33);
+}
+
+.search-container {
+  top:50%;
+  left:50%;
+  position: absolute;
+  height:30px;
+  width: 300px;
+  margin: -15px 0 0 -150px;
+}
+
+.suggestion-li{
+  height:30px;
+  width: 300px;
+}
+ul {
+  list-style-type : none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 2px;
+  margin-top: 0;
+}
+ul.has-suggestions {
+  list-style-type : none;
+}
+ul li {
+  margin-left: 0;
+  padding-left:2px;
+  padding-top:5px;
+  background-color: rgb(252, 191, 101);
+  
+}
+ul li:hover {
+  background-color: orangered;
+}
+
